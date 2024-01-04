@@ -4,7 +4,7 @@
       "@/*": ["./src/*"]
     },
     "moduleResolution": "Node16",
-    "module": "commonjs",
+    "module": "Node16",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -23,5 +23,9 @@
     "noFallthroughCasesInSwitch": false,
     "strict": true,
     "alwaysStrict": true,
-  }
+  },
+  // "ormconfig": {
+  //   "entitiesDir": "./src/modulesentity",
+  //   "migrationsDir": "./src/migration"
+  // }
 }
