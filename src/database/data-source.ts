@@ -11,7 +11,11 @@ const configService = new ConfigService();
 
 export const typeOrmDatabaseOptions: DataSourceOptions = {
   type: 'postgres',
-  url: process.env.DATABASE_URL,
+  host: configService.get('DATABASE_HOST'),
+  port: configService.get('DATABASE_PORT'),
+  username: configService.get('DATABASE_USER'),
+  password: configService.get('DATABASE_PASSWORD'),
+  database: configService.get('DATABASE_DB'),
   synchronize: false,
   logging: JSON.parse(configService.get('DATABASE_LOGGING')),
   entities: ['dist/**/*.entity.js'],
