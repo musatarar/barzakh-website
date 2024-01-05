@@ -22,7 +22,7 @@ async function bootstrap() {
 
   app.setGlobalPrefix('api');
 
-  // await app.listen(configService.get('PORT'));
-  await app.listen(process.env.PORT);
+  await app.listen(configService.get('PORT'));
+  
 }
 bootstrap();
