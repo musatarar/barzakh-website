@@ -17,6 +17,9 @@ export class MenuItem extends BaseEntity{
     @Column()
     name: string;
 
+    @Column()
+    price: string;
+
     @Column({
         type: 'enum',
         enum: menuItemTypes,
