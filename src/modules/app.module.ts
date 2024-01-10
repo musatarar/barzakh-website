@@ -1,8 +1,8 @@
 import { Module } from '@nestjs/common';
-import { MenuItemModule } from './menu-item/menu-item.module';
 import { typeOrmDatabaseOptions } from '@/database/data-source';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { MenuItemModule } from './menu-item/menu-item/menu-item.module';
 
 @Module({
   imports: [
