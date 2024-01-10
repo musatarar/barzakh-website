@@ -1,6 +1,6 @@
 import { Expose } from "class-transformer";
 import { BaseEntity, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
-import { menuItemTypes } from "../menu-item/menu-item.taxonomy";
+import { menuItemTypes } from "../menu-item.taxonomy";
 
 @Entity()
 export class MenuItem extends BaseEntity{
@@ -16,9 +16,6 @@ export class MenuItem extends BaseEntity{
 
     @Column()
     name: string;
-
-    @Column()
-    price: string;
 
     @Column({
         type: 'enum',
