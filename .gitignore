@@ -2,3 +2,6 @@
 **/dist
 **/node_modules
 **/.env
+src/modules/menu-item/entities/menu-item.entity.ts
+src/database/migrations/1704907518762_make_price_required-migrations.ts
+src/database/migrations/1704907309101_add_price-migrations.ts
